@@ -13,6 +13,6 @@
         <node name="topic_tool" pkg="attitude_control" type="topic_tool"></node>
         <node name="origin_py" pkg="attitude_control" type="origin.py" output="screen"></node>
         <node name="main" pkg="attitude_control" type="main"></node>
-      <!--  <node name="Attitude" pkg="attitude_control" type="attitude"></node> -->
+        <node name="Attitude" pkg="attitude_control" type="attitude" output="screen"></node>
     </group>
 </launch>

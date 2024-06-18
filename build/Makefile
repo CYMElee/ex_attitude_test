@@ -415,6 +415,19 @@ mavros_msgs_generate_messages_py/fast:
 .PHONY : mavros_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named attitude
+
+# Build rule for target.
+attitude: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 attitude
+.PHONY : attitude
+
+# fast build rule for target.
+attitude/fast:
+	$(MAKE) -f attitude_control/CMakeFiles/attitude.dir/build.make attitude_control/CMakeFiles/attitude.dir/build
+.PHONY : attitude/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -439,6 +452,19 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 std_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f attitude_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make attitude_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f attitude_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make attitude_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
@@ -569,19 +595,6 @@ uuid_msgs_generate_messages_nodejs: cmake_check_build_system
 uuid_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f attitude_control/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make attitude_control/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
 .PHONY : uuid_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_nodejs
-
-# Build rule for target.
-sensor_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f attitude_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make attitude_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_py
@@ -1057,8 +1070,10 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... geographic_msgs_generate_messages_eus"
 	@echo "... mavros_msgs_generate_messages_py"
+	@echo "... attitude"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
@@ -1069,7 +1084,6 @@ help:
 	@echo "... mavros_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... uuid_msgs_generate_messages_nodejs"
-	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... mavros_msgs_generate_messages_cpp"
 	@echo "... main"

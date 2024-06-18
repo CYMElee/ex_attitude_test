@@ -48,7 +48,7 @@ int main(int argv,char** argc)
 
         Attitude_Desire();
         Attitude_Error();
-
+       // ROS_INFO("PUBLISHING RD");
         eR.publish(er);
         Rd.publish(rd);
         t++;
@@ -69,9 +69,9 @@ void Attitude_Desire(void)
     theta = 0.5*sin(t*dt);
 
     Eigen::Quaternionf q1(cos(theta/2), 0, sin(theta/2), 0);
-    Eigen::Quaternionf q2(cos(theta/2), 0, 0,sin(theta/2));
+   // Eigen::Quaternionf q2(cos(theta/2), sin(theta/2), 0,0);
 
-    Eigen::Quaternionf q_product = q1 * q2;
+    Eigen::Quaternionf q_product = q1;
 
     rd.data[0] =q_product.w();
     rd.data[1] =q_product.x();

@@ -37,7 +37,6 @@
 /home/ubuntu/yajie_ws/ex_attitude_test/build/gtest/googletest/CMakeFiles/gtest.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/install/strip.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/install/local.dir
-/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/install.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/list_install_components.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/roscpp_generate_messages_cpp.dir
@@ -50,8 +49,12 @@
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/geographic_msgs_generate_messages_eus.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/mavros_msgs_generate_messages_py.dir
+/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/install.dir
+/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/attitude.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/edit_cache.dir
+/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/geometry_msgs_generate_messages_py.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/uuid_msgs_generate_messages_lisp.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/test.dir
@@ -63,8 +66,6 @@
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir
-/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
-/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/edit_cache.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/tf2_msgs_generate_messages_py.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/mavros_msgs_generate_messages_cpp.dir
 /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/main.dir

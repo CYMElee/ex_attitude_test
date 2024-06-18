@@ -27,7 +27,7 @@ void Rd_cb(const std_msgs::Float32MultiArray::ConstPtr& msg){
     T.orientation.x = msg->data[1];
     T.orientation.y = msg->data[2];
     T.orientation.z = msg->data[3];
-    T.thrust = 0.8;
+    T.thrust = 0.5;
 }
 
 
@@ -103,7 +103,7 @@ int main(int argv,char** argc)
     }
     ros::ServiceClient takeoff_cl = nh.serviceClient<mavros_msgs::CommandTOL>("mavros/cmd/takeoff");
     mavros_msgs::CommandTOL srv_takeoff;
-    srv_takeoff.request.altitude = 0.8;
+    srv_takeoff.request.altitude = 0.5;
     if (takeoff_cl.call(srv_takeoff)) {
        // trigger.data = 1;
        // z_pub.publish(trigger);
@@ -111,14 +111,21 @@ int main(int argv,char** argc)
     } else {
         ROS_ERROR("Failed Takeoff");
     }
-    
-    sleep(10);
+    ros::Time time_out0 = ros::Time::now();
+    while(ros::ok() && ros::Time::now() - time_out0 <ros::Duration(8)){
+    trigger.data = 1;
+    z_pub.publish(trigger);
+    ROS_ERROR("takeoff");
+    ros::spinOnce();
+    rate.sleep();
+    }
+    trigger.data = 0;
+    z_pub.publish(trigger);
     ros::Time time_out = ros::Time::now();
-    while(ros::ok() && ros::Time::now() - time_out <ros::Duration(10) ){
-        
-
-    //    T_pub.publish(T);
-
+    while(ros::ok() && ros::Time::now() - time_out <ros::Duration(30) ){
+       // T.thrust = 0.4;
+        T_pub.publish(T);
+        ROS_ERROR("Thrust control!!");
         ros::spinOnce();
         rate.sleep();
     }
@@ -128,9 +135,6 @@ int main(int argv,char** argc)
         arm_cmd.request.value = false;
         arming_client.call(arm_cmd);
         sleep(3);
-
-
-
 
     return 0;
 }
