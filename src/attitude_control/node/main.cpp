@@ -113,10 +113,10 @@ int main(int argv,char** argc)
     }
     
     sleep(10);
+    trigger.data = 0;
+    z_pub.publish(trigger);
     ros::Time time_out = ros::Time::now();
     while(ros::ok() && ros::Time::now() - time_out <ros::Duration(60) ){
-        
-
         T_pub.publish(T);
 
         ros::spinOnce();
@@ -128,9 +128,6 @@ int main(int argv,char** argc)
         arm_cmd.request.value = false;
         arming_client.call(arm_cmd);
         sleep(3);
-
-
-
 
     return 0;
 }

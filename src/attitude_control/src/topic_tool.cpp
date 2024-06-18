@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 
     while (ros::ok()) {
         if(flag.data == 1){
-            host_mocap.pose.position.z = 0.5;
+            host_mocap.pose.position.z += 0.5;
                     }
 
         ROS_INFO("odom: %.3f, %.3f, %.3f", host_mocap.pose.position.x, host_mocap.pose.position.y, host_mocap.pose.position.z);
