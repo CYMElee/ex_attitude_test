@@ -27,7 +27,7 @@ void Rd_cb(const std_msgs::Float32MultiArray::ConstPtr& msg){
     T.orientation.x = msg->data[1];
     T.orientation.y = msg->data[2];
     T.orientation.z = msg->data[3];
-    T.thrust = 0.5;
+    T.thrust = 0.8;
 }
 
 
@@ -72,8 +72,8 @@ int main(int argv,char** argc)
     ros::param::get("UAV_ID", UAV_ID);
     ROS_INFO("Wait for setting origin and home position...");
     std::string mavlink_topic = std::string("/MAV") + std::to_string(UAV_ID) + std::string("/mavlink/to");
-    ros::topic::waitForMessage<mavros_msgs::Mavlink>(mavlink_topic, ros::Duration(10.0));
-    ROS_INFO("Message received or timeout reached. Continuing execution.");
+    ros::topic::waitForMessage<mavros_msgs::Mavlink>(mavlink_topic);
+    ROS_ERROR("Message received or timeout reached. Continuing execution.");
 
     pose.pose.position.x = 0;
     pose.pose.position.y = 0;
@@ -103,10 +103,10 @@ int main(int argv,char** argc)
     }
     ros::ServiceClient takeoff_cl = nh.serviceClient<mavros_msgs::CommandTOL>("mavros/cmd/takeoff");
     mavros_msgs::CommandTOL srv_takeoff;
-    srv_takeoff.request.altitude = 0.5;
+    srv_takeoff.request.altitude = 0.8;
     if (takeoff_cl.call(srv_takeoff)) {
-        trigger.data = 1;
-        z_pub.publish(trigger);
+       // trigger.data = 1;
+       // z_pub.publish(trigger);
         ROS_INFO("srv_takeoff send ok %d", srv_takeoff.response.success);
     } else {
         ROS_ERROR("Failed Takeoff");
@@ -114,10 +114,10 @@ int main(int argv,char** argc)
     
     sleep(10);
     ros::Time time_out = ros::Time::now();
-    while(ros::ok() && ros::Time::now() - time_out <ros::Duration(60) ){
+    while(ros::ok() && ros::Time::now() - time_out <ros::Duration(10) ){
         
 
-        T_pub.publish(T);
+    //    T_pub.publish(T);
 
         ros::spinOnce();
         rate.sleep();

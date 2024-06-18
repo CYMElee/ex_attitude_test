@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lee/workspace/ROS_ws/ex_attitude_test/src
+CMAKE_SOURCE_DIR = /home/ubuntu/yajie_ws/ex_attitude_test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lee/workspace/ROS_ws/ex_attitude_test/build
+CMAKE_BINARY_DIR = /home/ubuntu/yajie_ws/ex_attitude_test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/workspace/ROS_ws/ex_attitude_test/build/CMakeFiles /home/lee/workspace/ROS_ws/ex_attitude_test/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/yajie_ws/ex_attitude_test/build/CMakeFiles /home/ubuntu/yajie_ws/ex_attitude_test/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/workspace/ROS_ws/ex_attitude_test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/yajie_ws/ex_attitude_test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -413,19 +413,6 @@ mavros_msgs_generate_messages_py: cmake_check_build_system
 mavros_msgs_generate_messages_py/fast:
 	$(MAKE) -f attitude_control/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make attitude_control/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
 .PHONY : mavros_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named attitude
-
-# Build rule for target.
-attitude: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 attitude
-.PHONY : attitude
-
-# fast build rule for target.
-attitude/fast:
-	$(MAKE) -f attitude_control/CMakeFiles/attitude.dir/build.make attitude_control/CMakeFiles/attitude.dir/build
-.PHONY : attitude/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
@@ -753,6 +740,19 @@ actionlib_generate_messages_lisp/fast:
 .PHONY : actionlib_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named topic_tool
+
+# Build rule for target.
+topic_tool: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tool
+.PHONY : topic_tool
+
+# fast build rule for target.
+topic_tool/fast:
+	$(MAKE) -f attitude_control/CMakeFiles/topic_tool.dir/build.make attitude_control/CMakeFiles/topic_tool.dir/build
+.PHONY : topic_tool/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
 
 # Build rule for target.
@@ -1057,7 +1057,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... geographic_msgs_generate_messages_eus"
 	@echo "... mavros_msgs_generate_messages_py"
-	@echo "... attitude"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -1083,6 +1082,7 @@ help:
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_lisp"
+	@echo "... topic_tool"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... geographic_msgs_generate_messages_lisp"
