@@ -105,8 +105,7 @@ int main(int argv,char** argc)
     mavros_msgs::CommandTOL srv_takeoff;
     srv_takeoff.request.altitude = 0.5;
     if (takeoff_cl.call(srv_takeoff)) {
-       // trigger.data = 1;
-       // z_pub.publish(trigger);
+     
         ROS_INFO("srv_takeoff send ok %d", srv_takeoff.response.success);
     } else {
         ROS_ERROR("Failed Takeoff");

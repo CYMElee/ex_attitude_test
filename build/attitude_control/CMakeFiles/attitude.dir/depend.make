@@ -73,6 +73,7 @@ attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /opt/ros/noetic/in
 attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /opt/ros/noetic/include/ros/wall_timer.h
 attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /opt/ros/noetic/include/ros/wall_timer_options.h
 attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /opt/ros/noetic/include/rosconsole/macros_generated.h
+attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /opt/ros/noetic/include/std_msgs/Bool.h
 attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /opt/ros/noetic/include/std_msgs/Float32MultiArray.h
 attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /opt/ros/noetic/include/std_msgs/Header.h
 attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /opt/ros/noetic/include/std_msgs/MultiArrayDimension.h

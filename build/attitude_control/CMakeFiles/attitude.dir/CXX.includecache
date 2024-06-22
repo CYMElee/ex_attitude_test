@@ -25,6 +25,8 @@ mavros_msgs/State.h
 -
 mavros_msgs/Mavlink.h
 -
+std_msgs/Bool.h
+-
 Eigen/Dense
 /home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/Eigen/Dense
 cmath
@@ -907,6 +909,22 @@ ros/forwards.h
 /opt/ros/noetic/include/ros/ros/forwards.h
 
 /opt/ros/noetic/include/rosconsole/macros_generated.h
+
+/opt/ros/noetic/include/std_msgs/Bool.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/noetic/include/std_msgs/Float32MultiArray.h
 string

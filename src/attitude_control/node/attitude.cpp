@@ -9,6 +9,7 @@
 #include <mavros_msgs/SetMode.h>
 #include <mavros_msgs/State.h>
 #include <mavros_msgs/Mavlink.h>
+#include <std_msgs/Bool.h>
 #include "Eigen/Dense"
 #include "cmath"
 
@@ -46,7 +47,7 @@ int main(int argv,char** argc)
         ("Rd",10);  
 
     ros::Rate rate(100);  
-    ros::topic::waitForMessage<mavros_msgs::Mavlink>(Rd_Topic);
+    ros::topic::waitForMessage<std_msgs::Bool>(Rd_Topic);
     ROS_ERROR("Start_Generate_Rd");
     while(ros::ok()){
         Attitude_Desire();
