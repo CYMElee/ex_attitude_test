@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/yajie_ws/ex_attitude_test/src
+CMAKE_SOURCE_DIR = /home/lee/workspace/ROS_ws/ex_attitude_test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/yajie_ws/ex_attitude_test/build
+CMAKE_BINARY_DIR = /home/lee/workspace/ROS_ws/ex_attitude_test/build
 
 # Utility rule file for actionlib_generate_messages_eus.
 
@@ -63,10 +63,10 @@ attitude_control/CMakeFiles/actionlib_generate_messages_eus.dir/build: actionlib
 .PHONY : attitude_control/CMakeFiles/actionlib_generate_messages_eus.dir/build
 
 attitude_control/CMakeFiles/actionlib_generate_messages_eus.dir/clean:
-	cd /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : attitude_control/CMakeFiles/actionlib_generate_messages_eus.dir/clean
 
 attitude_control/CMakeFiles/actionlib_generate_messages_eus.dir/depend:
-	cd /home/ubuntu/yajie_ws/ex_attitude_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/yajie_ws/ex_attitude_test/src /home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control /home/ubuntu/yajie_ws/ex_attitude_test/build /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/actionlib_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lee/workspace/ROS_ws/ex_attitude_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/workspace/ROS_ws/ex_attitude_test/src /home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control /home/lee/workspace/ROS_ws/ex_attitude_test/build /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control/CMakeFiles/actionlib_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : attitude_control/CMakeFiles/actionlib_generate_messages_eus.dir/depend
 

@@ -15,4 +15,5 @@
         <node name="main" pkg="attitude_control" type="main"></node>
         <node name="Attitude" pkg="attitude_control" type="attitude" output="screen"></node>
     </group>
+    <node pkg="rosbag" type="record" name="record_bag"args="/MAV1/eR -o $(env HOME)/Desktop/eR.bag"></node>
 </launch>

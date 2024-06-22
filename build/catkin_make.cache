@@ -1,2 +1,2 @@
 attitude_control
--DCATKIN_DEVEL_PREFIX=/home/ubuntu/yajie_ws/ex_attitude_test/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/yajie_ws/ex_attitude_test/install -G Unix Makefiles
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/lee/workspace/ROS_ws/ex_attitude_test/devel -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ROS_ws/ex_attitude_test/install -G Unix Makefiles

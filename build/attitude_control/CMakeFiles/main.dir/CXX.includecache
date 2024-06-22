@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/main.cpp
+/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/main.cpp
 ros/ros.h
-/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/ros/ros.h
+/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/ros/ros.h
 string
 -
 geometry_msgs/PoseStamped.h
@@ -24,11 +24,11 @@ mavros_msgs/State.h
 mavros_msgs/Mavlink.h
 -
 mavros_msgs/AttitudeTarget.h
-/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/mavros_msgs/AttitudeTarget.h
+/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/mavros_msgs/AttitudeTarget.h
 std_msgs/Bool.h
-/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/std_msgs/Bool.h
+/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/std_msgs/Bool.h
 std_msgs/Float32MultiArray.h
-/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/std_msgs/Float32MultiArray.h
+/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/std_msgs/Float32MultiArray.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

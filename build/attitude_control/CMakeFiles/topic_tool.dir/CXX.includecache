@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/src/topic_tool.cpp
+/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/src/topic_tool.cpp
 ros/ros.h
 -
 geometry_msgs/PoseStamped.h
@@ -34,7 +34,7 @@ tf/tf.h
 string
 -
 std_msgs/Bool.h
-/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/src/std_msgs/Bool.h
+/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/src/std_msgs/Bool.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

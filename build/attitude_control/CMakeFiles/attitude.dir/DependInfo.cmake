@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp" "/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o"
+  "/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp" "/home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

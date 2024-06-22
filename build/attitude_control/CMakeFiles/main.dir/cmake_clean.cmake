@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/main"
-  "/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/main.pdb"
+  "/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/main"
+  "/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/main.pdb"
   "CMakeFiles/main.dir/node/main.cpp.o"
 )
 

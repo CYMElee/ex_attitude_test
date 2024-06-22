@@ -67,14 +67,14 @@ set(attitude_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(attitude_control_SOURCE_PREFIX /home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control)
-  set(attitude_control_DEVEL_PREFIX /home/ubuntu/yajie_ws/ex_attitude_test/devel)
+  set(attitude_control_SOURCE_PREFIX /home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control)
+  set(attitude_control_DEVEL_PREFIX /home/lee/workspace/ROS_ws/ex_attitude_test/devel)
   set(attitude_control_INSTALL_PREFIX "")
   set(attitude_control_PREFIX ${attitude_control_DEVEL_PREFIX})
 else()
   set(attitude_control_SOURCE_PREFIX "")
   set(attitude_control_DEVEL_PREFIX "")
-  set(attitude_control_INSTALL_PREFIX /home/ubuntu/yajie_ws/ex_attitude_test/install)
+  set(attitude_control_INSTALL_PREFIX /home/lee/workspace/ROS_ws/ex_attitude_test/install)
   set(attitude_control_PREFIX ${attitude_control_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ubuntu/yajie_ws/ex_attitude_test/install/lib;/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/lee/workspace/ROS_ws/ex_attitude_test/install/lib;/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

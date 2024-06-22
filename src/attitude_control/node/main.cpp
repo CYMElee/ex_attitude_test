@@ -27,7 +27,7 @@ void Rd_cb(const std_msgs::Float32MultiArray::ConstPtr& msg){
     T.orientation.x = msg->data[1];
     T.orientation.y = msg->data[2];
     T.orientation.z = msg->data[3];
-    T.thrust = 0.5;
+    T.thrust = 0.4;
 }
 
 
