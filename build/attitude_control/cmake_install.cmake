@@ -1,8 +1,8 @@
-# Install script for directory: /home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control
+# Install script for directory: /home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lee/workspace/ROS_ws/ex_attitude_test/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/yajie_ws/ex_attitude_test/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "RelWithDebInfo")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control/catkin_generated/installspace/attitude_control.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/catkin_generated/installspace/attitude_control.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/attitude_control/cmake" TYPE FILE FILES
-    "/home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control/catkin_generated/installspace/attitude_controlConfig.cmake"
-    "/home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control/catkin_generated/installspace/attitude_controlConfig-version.cmake"
+    "/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/catkin_generated/installspace/attitude_controlConfig.cmake"
+    "/home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/catkin_generated/installspace/attitude_controlConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/attitude_control" TYPE FILE FILES "/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/attitude_control" TYPE FILE FILES "/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/package.xml")
 endif()
 

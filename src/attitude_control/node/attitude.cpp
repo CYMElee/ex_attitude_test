@@ -39,7 +39,7 @@ int main(int argv,char** argc)
     er.data.resize(3);
     rd.data.resize(4); //publish quaternion form
     ros::param::get("UAV_ID", UAV_ID);
-    std::string Rd_Topic = std::string("/MAV") + std::to_string(UAV_ID) + std::string("/Ag");
+    std::string Rd_Topic = std::string("/MAV") + std::to_string(UAV_ID) + std::string("/trigger");
     ros::Subscriber R =nh.subscribe<geometry_msgs::PoseStamped>("mavros/local_position/pose",10,R_cb);
     ros::Publisher eR = nh.advertise<std_msgs::Float32MultiArray>
         ("eR",10);
@@ -68,8 +68,8 @@ int main(int argv,char** argc)
 
 void Attitude_Desire(void)
 {   
-    theta = 0.3*sin(t*dt*2);
-    theta_2 = 0.3*cos(t*dt*2);
+    theta = 0.5*sin(t*dt*1.1);
+    theta_2 = 0.5*cos(t*dt*1.1);
     float yaw = 0.0;
     float pitch = theta;
     float roll = theta;

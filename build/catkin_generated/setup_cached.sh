@@ -7,6 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/home/lee/workspace/tools/PX4-Autopilot/build/px4_sitl_default/build_gazebo-classic'
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
 export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
-export PWD='/home/lee/workspace/ROS_ws/ex_attitude_test/build'
+export PWD='/home/ubuntu/yajie_ws/ex_attitude_test/build'

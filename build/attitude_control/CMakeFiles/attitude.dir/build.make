@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lee/workspace/ROS_ws/ex_attitude_test/src
+CMAKE_SOURCE_DIR = /home/ubuntu/yajie_ws/ex_attitude_test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lee/workspace/ROS_ws/ex_attitude_test/build
+CMAKE_BINARY_DIR = /home/ubuntu/yajie_ws/ex_attitude_test/build
 
 # Include any dependencies generated for this target.
 include attitude_control/CMakeFiles/attitude.dir/depend.make
@@ -58,17 +58,17 @@ include attitude_control/CMakeFiles/attitude.dir/progress.make
 include attitude_control/CMakeFiles/attitude.dir/flags.make
 
 attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: attitude_control/CMakeFiles/attitude.dir/flags.make
-attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lee/workspace/ROS_ws/ex_attitude_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o"
-	cd /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/attitude.dir/node/attitude.cpp.o -c /home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp
+attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o: /home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/yajie_ws/ex_attitude_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o"
+	cd /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/attitude.dir/node/attitude.cpp.o -c /home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp
 
 attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/attitude.dir/node/attitude.cpp.i"
-	cd /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp > CMakeFiles/attitude.dir/node/attitude.cpp.i
+	cd /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp > CMakeFiles/attitude.dir/node/attitude.cpp.i
 
 attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/attitude.dir/node/attitude.cpp.s"
-	cd /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp -o CMakeFiles/attitude.dir/node/attitude.cpp.s
+	cd /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp -o CMakeFiles/attitude.dir/node/attitude.cpp.s
 
 # Object files for target attitude
 attitude_OBJECTS = \
@@ -77,45 +77,45 @@ attitude_OBJECTS = \
 # External object files for target attitude
 attitude_EXTERNAL_OBJECTS =
 
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: attitude_control/CMakeFiles/attitude.dir/build.make
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/liborocos-kdl.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/liborocos-kdl.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libtf2_ros.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libactionlib.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libmessage_filters.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libroscpp.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/x86_64-linux-gnu/libpthread.a
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/librosconsole.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libtf2.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/librostime.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libcpp_common.so
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude: attitude_control/CMakeFiles/attitude.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lee/workspace/ROS_ws/ex_attitude_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude"
-	cd /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/attitude.dir/link.txt --verbose=$(VERBOSE)
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: attitude_control/CMakeFiles/attitude.dir/node/attitude.cpp.o
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: attitude_control/CMakeFiles/attitude.dir/build.make
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/liborocos-kdl.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/liborocos-kdl.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libtf2_ros.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libactionlib.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libmessage_filters.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libroscpp.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/librosconsole.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libtf2.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/librostime.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /opt/ros/noetic/lib/libcpp_common.so
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude: attitude_control/CMakeFiles/attitude.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/yajie_ws/ex_attitude_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude"
+	cd /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/attitude.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-attitude_control/CMakeFiles/attitude.dir/build: /home/lee/workspace/ROS_ws/ex_attitude_test/devel/lib/attitude_control/attitude
+attitude_control/CMakeFiles/attitude.dir/build: /home/ubuntu/yajie_ws/ex_attitude_test/devel/lib/attitude_control/attitude
 
 .PHONY : attitude_control/CMakeFiles/attitude.dir/build
 
 attitude_control/CMakeFiles/attitude.dir/clean:
-	cd /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control && $(CMAKE_COMMAND) -P CMakeFiles/attitude.dir/cmake_clean.cmake
+	cd /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control && $(CMAKE_COMMAND) -P CMakeFiles/attitude.dir/cmake_clean.cmake
 .PHONY : attitude_control/CMakeFiles/attitude.dir/clean
 
 attitude_control/CMakeFiles/attitude.dir/depend:
-	cd /home/lee/workspace/ROS_ws/ex_attitude_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lee/workspace/ROS_ws/ex_attitude_test/src /home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control /home/lee/workspace/ROS_ws/ex_attitude_test/build /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control /home/lee/workspace/ROS_ws/ex_attitude_test/build/attitude_control/CMakeFiles/attitude.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/yajie_ws/ex_attitude_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/yajie_ws/ex_attitude_test/src /home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control /home/ubuntu/yajie_ws/ex_attitude_test/build /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control /home/ubuntu/yajie_ws/ex_attitude_test/build/attitude_control/CMakeFiles/attitude.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : attitude_control/CMakeFiles/attitude.dir/depend
 

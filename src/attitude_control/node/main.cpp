@@ -123,8 +123,6 @@ int main(int argv,char** argc)
     }
     trigger.data = 0;
     z_pub.publish(trigger);
-    sleep(2);
-    a_pub.publish(trigger);
     ros::Time time_out = ros::Time::now();
     while(ros::ok() && ros::Time::now() - time_out <ros::Duration(30) ){
         T_pub.publish(T);

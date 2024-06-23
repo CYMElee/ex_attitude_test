@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp
+/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/attitude.cpp
 ros/ros.h
-/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/ros/ros.h
+/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/ros/ros.h
 string
 -
 std_msgs/Float32MultiArray.h
-/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/std_msgs/Float32MultiArray.h
+/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/std_msgs/Float32MultiArray.h
 geometry_msgs/PoseStamped.h
 -
 mavros_msgs/CommandBool.h
@@ -28,9 +28,9 @@ mavros_msgs/Mavlink.h
 std_msgs/Bool.h
 -
 Eigen/Dense
-/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/Eigen/Dense
+/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/Eigen/Dense
 cmath
-/home/lee/workspace/ROS_ws/ex_attitude_test/src/attitude_control/node/cmath
+/home/ubuntu/yajie_ws/ex_attitude_test/src/attitude_control/node/cmath
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string
