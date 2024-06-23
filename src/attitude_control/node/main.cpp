@@ -61,6 +61,9 @@ int main(int argv,char** argc)
     /*trigger*/
     ros::Publisher z_pub = nh.advertise<std_msgs::Bool>
             ("trigger", 10);
+    /*Attitude start generate*/
+    ros::Publisher a_pub = nh.advertise<std_msgs::Bool>
+            ("Ag", 10);
 
 
     ros::Rate rate(100.0);
@@ -73,7 +76,7 @@ int main(int argv,char** argc)
     ROS_INFO("Wait for setting origin and home position...");
     std::string mavlink_topic = std::string("/MAV") + std::to_string(UAV_ID) + std::string("/mavlink/to");
     ros::topic::waitForMessage<mavros_msgs::Mavlink>(mavlink_topic);
-    ROS_ERROR("Message received or timeout reached. Continuing execution.");
+   // ROS_ERROR("Message received or timeout reached. Continuing execution.");
 
     pose.pose.position.x = 0;
     pose.pose.position.y = 0;
@@ -120,11 +123,12 @@ int main(int argv,char** argc)
     }
     trigger.data = 0;
     z_pub.publish(trigger);
+    sleep(2);
+    a_pub.publish(trigger);
     ros::Time time_out = ros::Time::now();
     while(ros::ok() && ros::Time::now() - time_out <ros::Duration(30) ){
-       // T.thrust = 0.4;
         T_pub.publish(T);
-        ROS_ERROR("Thrust control!!");
+       // ROS_ERROR("Thrust control!!");
         ros::spinOnce();
         rate.sleep();
     }

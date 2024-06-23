@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="rosbag" type="record"
+        name="record_bag"
+        args="/MAV1/eR -o $(env HOME)/Desktop/pose.bag"></node>
+</launch>
